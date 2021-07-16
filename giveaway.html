@@ -81,7 +81,7 @@
                                             Phone Number
                                         </td>
                                         <td class="td2">
-                                            <input required name="PhoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890" size="23"/>
+                                            <input required name="PhoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890" size="15"/>
                                         </td>
                                     </tr>
                                     <tr>
@@ -89,7 +89,7 @@
                                             Email Address
                                         </td>
                                         <td class="td2">
-                                            <input required type="email" name="Email" placeholder="Ex: name@gmail.com" size="23">
+                                            <input required type="email" name="Email" placeholder="Ex: name@gmail.com" size="15">
                                         </td>
                                     </tr>
                                     <tr>
@@ -102,7 +102,7 @@
                                             Address
                                         </td>
                                         <td class="td2">
-                                            <input required type="text" name="Address" size="23">
+                                            <input required type="text" name="Address" size="15">
                                         </td>
                                     </tr>
                                     <tr>
@@ -110,7 +110,7 @@
                                             City
                                         </td>
                                         <td class="td2">
-                                            <input required type="text" name="City" size="23" minlength="2" maxlength="3" placeholder="Ex: HFX">
+                                            <input required type="text" name="City" size="15" minlength="2" maxlength="3" placeholder="Ex: HFX">
                                         </td>
                                     </tr>
                                     <tr>
@@ -119,19 +119,19 @@
                                         </td>
                                         <td class="td2">
                                             <select required name="Province">
-                                                <option value="Alberta">Alberta</option>
-                                                <option value="British Columbia">British Columbia</option>
-                                                <option value="Manitoba">Manitoba</option>
-                                                <option value="New Brunswick">New Brunswick</option>
-                                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                                                <option value="Northwest Territories">Northwest Territories</option>
-                                                <option value="Nova Scotia">Nova Scotia</option>
-                                                <option value="Nunavut">Nunavut</option>
-                                                <option value="Ontario">Ontario</option>
-                                                <option value="Prince Edward Island">Prince Edward Island</option>
-                                                <option value="Quebec">Quebec</option>
-                                                <option value="Saskatchewan">Saskatchewan</option>
-                                                <option value="Yukon">Yukon</option>
+                                                <option value="Alberta">A.B.</option>
+                                                <option value="British Columbia">B.C.</option>
+                                                <option value="Manitoba">M.B.</option>
+                                                <option value="New Brunswick">N.B.</option>
+                                                <option value="Newfoundland and Labrador">N.L.</option>
+                                                <option value="Northwest Territories">N.W.T</option>
+                                                <option value="Nova Scotia">N.S.</option>
+                                                <option value="Nunavut">N.U.</option>
+                                                <option value="Ontario">O.N.</option>
+                                                <option value="Prince Edward Island">P.E.I.</option>
+                                                <option value="Quebec">Q.C.</option>
+                                                <option value="Saskatchewan">S.K.</option>
+                                                <option value="Yukon">Y.T.</option>
                                             </select>
                                         </td>
                                     </tr>
@@ -140,7 +140,7 @@
                                             Postal Code
                                         </td>
                                         <td class="td2">
-                                            <input required type="text" name="PostalCode" size="23" pattern="[a-z][0-9][a-z][0-9][a-z][0-9]" placeholder="Ex: A1B2C3">
+                                            <input required type="text" name="PostalCode" size="15" pattern="[a-z][0-9][a-z][0-9][a-z][0-9]" placeholder="Ex: A1B2C3">
                                         </td>
                                     </tr>
                                     <tr>
@@ -158,10 +158,10 @@
                                     </tr>
                                     <tr>
                                         <td class="td1">
-                                            Time Since you Started<br> Cubing in Months
+                                            Time Since you Started<br> Cubing in Years
                                         </td>
                                         <td class="td2">
-                                            <input type="number" min="0" name="TimeCubing">
+                                            <input type="number" min="0" max="100" name="TimeCubing">
                                         </td>
                                     </tr>
                                     <tr>
@@ -169,7 +169,7 @@
                                             Fastest solve in seconds
                                         </td>
                                         <td class="td2">
-                                            <input type="number" min="0" name="FastestSolve">
+                                            <input type="number" min="0" max="1000" name="FastestSolve">
                                         </td>
                                     </tr>
                                     <tr>
